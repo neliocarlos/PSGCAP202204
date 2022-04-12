@@ -3,7 +3,7 @@ CREATE TABLE Subcategoria (
 	ID_Categoria INT NOT NULL,
 	Descricao_Subcategoria VARCHAR(MAX) NOT NULL,
 	Situacao BIT NULL DEFAULT 1,
-	datainsert DATETIME NULL DEFAULT GETDATE(),
+	DataInclusao DATETIME NULL DEFAULT GETDATE(),
 	CONSTRAINT PK_Subcategoria PRIMARY KEY (ID_Subcategoria),
 	CONSTRAINT FK_Subcategoria_Categoria FOREIGN KEY (ID_Categoria) REFERENCES Categoria(ID_Categoria)
 )
