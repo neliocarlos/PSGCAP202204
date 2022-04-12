@@ -1,0 +1,24 @@
+--USO DO OR E IN
+--PRIMEIRA FORMA DE FAZER:
+--SELECT
+--	Categoria.Descricao_Categoria,
+--	Subcategoria.Descricao_Subcategoria,
+--	Subcategoria.Situacao
+--FROM Subcategoria
+--INNER JOIN Categoria ON Categoria.ID_Categoria = Subcategoria.ID_Categoria
+--WHERE 
+--	(Subcategoria.ID_Categoria = 3) OR
+--	(Subcategoria.ID_Categoria = 5) OR
+--	(Subcategoria.ID_Categoria = 7) OR
+--	(Subcategoria.ID_Categoria = 9);
+
+-----------------------------------------------------------------------------
+
+--SEGUNDO FORMA DE FAZER:
+--SELECT
+--	Categoria.Descricao_Categoria,
+--	Subcategoria.Descricao_Subcategoria,
+--	Subcategoria.Situacao
+--FROM Subcategoria
+--INNER JOIN Categoria ON Categoria.ID_Categoria = Subcategoria.ID_Categoria
+--WHERE (Subcategoria.ID_Categoria IN (3, 5, 7, 9));
