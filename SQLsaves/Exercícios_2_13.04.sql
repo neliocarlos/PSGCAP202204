@@ -102,3 +102,22 @@
 --Para definir se a busca pela palavra é contida ou começa com ela, definir com o uso de "%", sendo apenas % no final da palavra para
 --buscar palavras que começam com a definição, EX:'Palavra%'. Se o caso for buscar palavras contidas, usar a definição entre "%". EX: '%Palavra%'
 --ORDER BY: Organiza da forma que você quer. Deve ser a última definição do código.
+
+------------------------------------------------------------------------------------------------------------------
+
+--EXERCÍCIO 5
+--SELECT TOP 10
+--	CAT.Descricao_Categoria AS 'Categoria',
+--	SUB.Descricao_Subcategoria AS 'Subcategoria',
+--	PRO.Descricao_Produto AS 'Produto'
+--FROM Produto AS PRO
+--INNER JOIN Subcategoria AS SUB ON SUB.ID_Subcategoria = PRO.ID_Subcategoria
+--INNER JOIN Categoria AS CAT ON CAT.ID_Categoria = PRO.ID_Categoria
+--WHERE (PRO.ID_Categoria = 4) AND (PRO.Descricao_Produto LIKE '%ADRIA%');
+
+--SELECT COUNT(*) AS 'Quantidade de Registro'
+--FROM Produto AS PRO
+--INNER JOIN Subcategoria AS SUB ON SUB.ID_Subcategoria = PRO.ID_Subcategoria
+--INNER JOIN Categoria AS CAT ON CAT.ID_Categoria = PRO.ID_Categoria
+--WHERE (PRO.ID_Categoria = 4) AND (PRO.Descricao_Produto LIKE '%ADRIA%');
+
