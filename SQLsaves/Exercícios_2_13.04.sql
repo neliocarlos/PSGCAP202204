@@ -101,3 +101,4 @@
 --Na busca por palavras, usar LIKE como ferramenta para definir isso e colocar a palavra entre ' '
 --Para definir se a busca pela palavra é contida ou começa com ela, definir com o uso de "%", sendo apenas % no final da palavra para
 --buscar palavras que começam com a definição, EX:'Palavra%'. Se o caso for buscar palavras contidas, usar a definição entre "%". EX: '%Palavra%'
+--ORDER BY: Organiza da forma que você quer. Deve ser a última definição do código.
