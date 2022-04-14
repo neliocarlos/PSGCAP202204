@@ -1,0 +1,41 @@
+--create table Exercicio (
+--	ID_Exercicio int not null identity(1,1) primary key,
+--	Nome_Exercicio varchar(max) not null,
+--	Idade_Exercicio int null,
+--	Nota_Exercicio decimal(3,2) null,
+--	Situacao bit null default 1,
+--	DataInclusao datetime null default getdate()
+--)
+
+
+insert into Exercicio (Nome_Exercicio, Idade_Exercicio, Nota_Exercicio) values
+	('Teste 1', 18, 7.5),
+	('Teste 2', 13, 9.5),
+	('Teste 3', 5, 3.7),
+	('Teste 4', 23, 4.6),
+	('Teste 5', 2, 8.2),
+	('Teste 6', 33, 9),
+	('Teste 7', 4, 5.3),
+	('Teste 8', 12, 9.4),
+	('Teste 9', 12, 9.9),
+	('Teste 10', 13, 3),
+	('Teste 11', 65, 7.5),
+	('Teste 12', 78, 4.7),
+	('Teste 13', 12, 6.3),
+	('Teste 14', 3, 6.9),
+	('Teste 15', 41, 1.5),
+	('Teste 16', 59, 7.9),
+	('Teste 17', 6, 7.5),
+	('Teste 18', 6, 8.2),
+	('Teste 19', 14, 4.5),
+	('Teste 20', 32, 4.6),
+	('Teste 21', 19, 7.5),
+	('Teste 22', 7, 7.3),
+	('Teste 23', 99, 9),
+	('Teste 24', 32, 8.7),
+	('Teste 25', 10, 6.9),
+	('Teste 26', 15, 7.3),
+	('Teste 27', 46, 4.6),
+	('Teste 28', 8, 2.6),
+	('Teste 29', 8, 8.6),
+	('Teste 30', 96, 5.6)
