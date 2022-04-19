@@ -4,7 +4,7 @@
 --Configurar as colunas
  
  INSERT INTO Tabela (ID, Nome)
-	SELECT FROM Tabela_Bruta (ID, Nome)
+	SELECT ID, Nome FROM Tabela_Bruta
 GO
 
 --Importante as colunas serem do mesmo tipo (INT, VARCHAR(MAX), DATETIME, etc...)
