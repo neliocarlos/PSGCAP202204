@@ -1,3 +1,3 @@
 alter table Decks
 	add
-		id_cards int not null;
+		id_novo_deck int not null;
