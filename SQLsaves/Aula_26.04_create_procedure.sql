@@ -48,7 +48,7 @@ BEGIN
 		FDP.Datanasc_Funcionario, 
 		FDP.Email_Funcionario, 
 		FDP.ID_Pais, 
-	    FDE.Data_Admissao_Funcionario, 
+	    	FDE.Data_Admissao_Funcionario, 
 		FDE.Ctps_Funcionario
 	FROM Funcionario_Dados_Empresa AS FDE INNER JOIN
 	     Funcionario_Dados_Pessoais AS FDP ON FDE.Matricula_Funcionario = FDP.Matricula_Funcionario
