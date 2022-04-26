@@ -35,3 +35,48 @@ end;
 
 ---------------------------------------------------------
 
+CREATE PROCEDURE SP_Obter_Dados_Completos_Funcionario_Por_Matricula
+@MATRICULA BIGINT
+AS
+BEGIN
+SELECT 
+	FDP.ID_Funcionario, 
+	FDP.Matricula_Funcionario, 
+	FDP.Nome_Funcionario, 
+	FDP.Sobrenome_Funcionario, 
+	FDP.Sexo_Funcionario, 
+	FDP.Datanasc_Funcionario, 
+	FDP.Email_Funcionario, 
+	FDP.ID_Pais, 
+    FDE.Data_Admissao_Funcionario, 
+	FDE.Ctps_Funcionario
+FROM Funcionario_Dados_Empresa AS FDE INNER JOIN
+     Funcionario_Dados_Pessoais AS FDP ON FDE.Matricula_Funcionario = FDP.Matricula_Funcionario
+WHERE (FDP.Situacao = 1)
+	AND FDP.Matricula_Funcionario = @MATRICULA
+END;
+
+---------------------------------------------------------------------------------------------------
+
+CREATE PROCEDURE SP_Obter_Dados_Completos_Funcionario_Por_Aniversario_E_Sexo
+@ANIVERSARIO DATETIME,
+@SEXO CHAR(1)
+AS
+BEGIN
+	SELECT 
+		FDP.ID_Funcionario, 
+		FDP.Matricula_Funcionario, 
+		FDP.Nome_Funcionario, 
+		FDP.Sobrenome_Funcionario, 
+		FDP.Sexo_Funcionario, 
+		FDP.Datanasc_Funcionario, 
+		FDP.Email_Funcionario, 
+		FDP.ID_Pais, 
+		FDE.Data_Admissao_Funcionario, 
+		FDE.Ctps_Funcionario
+	FROM Funcionario_Dados_Empresa AS FDE INNER JOIN
+		 Funcionario_Dados_Pessoais AS FDP ON FDE.Matricula_Funcionario = FDP.Matricula_Funcionario
+	WHERE (FDP.Situacao = 1)
+		AND FDP.Datanasc_Funcionario = @ANIVERSARIO
+		AND FDP.Sexo_Funcionario = @SEXO
+END;
