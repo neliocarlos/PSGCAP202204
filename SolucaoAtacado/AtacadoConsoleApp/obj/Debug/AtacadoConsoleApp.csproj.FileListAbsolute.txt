@@ -1,0 +1,8 @@
+C:\Users\ncdin\source\repos\SolucaoAtacado\AtacadoConsoleApp\bin\Debug\AtacadoConsoleApp.exe.config
+C:\Users\ncdin\source\repos\SolucaoAtacado\AtacadoConsoleApp\bin\Debug\AtacadoConsoleApp.exe
+C:\Users\ncdin\source\repos\SolucaoAtacado\AtacadoConsoleApp\bin\Debug\AtacadoConsoleApp.pdb
+C:\Users\ncdin\source\repos\SolucaoAtacado\AtacadoConsoleApp\obj\Debug\AtacadoConsoleApp.csproj.AssemblyReference.cache
+C:\Users\ncdin\source\repos\SolucaoAtacado\AtacadoConsoleApp\obj\Debug\AtacadoConsoleApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\ncdin\source\repos\SolucaoAtacado\AtacadoConsoleApp\obj\Debug\AtacadoConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\ncdin\source\repos\SolucaoAtacado\AtacadoConsoleApp\obj\Debug\AtacadoConsoleApp.exe
+C:\Users\ncdin\source\repos\SolucaoAtacado\AtacadoConsoleApp\obj\Debug\AtacadoConsoleApp.pdb
