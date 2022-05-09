@@ -1,0 +1,95 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Cap202204ConsoleApp
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            //Desafio_001();
+            //Desafio_002();
+            //Desafio_003();
+            //Desafio_004();
+            //Desafio_005();
+            Console.ReadLine();
+        }
+
+        public static void Desafio_001()
+        {
+            Console.Write("Informe um valor:");
+            string valor = Console.ReadLine();
+            int num = Convert.ToInt32(valor);
+            int dobro = num * 2;
+            int triplo = num * 3;
+            double raiz = Math.Sqrt(num);
+
+            Console.WriteLine("O dobro de {0} vale {1}", num, dobro);
+            Console.WriteLine("O triplo de {0} vale {1}", num, triplo);
+            Console.WriteLine("A raiz de {0} vale {1}", num, raiz);
+
+        }
+
+        public static void Desafio_002()
+        {
+            Console.Write("Digite a primeira nota:");
+            string nota_1 = Console.ReadLine();
+            Console.Write("Digite a segunda nota:");
+            string nota_2 = Console.ReadLine();
+            double a = Convert.ToDouble(nota_1);
+            double b = Convert.ToDouble(nota_2);
+            double media = ((a + b) / 2);
+
+            Console.WriteLine("A média do aluno foi {0}", media);
+        }
+
+        public static void Desafio_003()
+        {
+            Console.Write("Informe um valor em metros:");
+            string valor = Console.ReadLine();
+            double metros = Convert.ToDouble(valor);
+            double cent = metros * 100;
+            double mill = cent * 10;
+
+            Console.WriteLine("O objeto possui {0} centimetros ou {1} milimetros.", cent, mill);
+        }
+
+        public static void Desafio_004()
+        {
+            Console.Write("Informe um número inteiro:");
+            string valor = Console.ReadLine();
+            int num = Convert.ToInt32(valor);
+            int tab = 0;
+            for (int i = 1; i <= 10; i++)
+            {
+                tab = num * i;
+                Console.WriteLine("{0}", tab);
+            }
+        }
+
+        public static void Desafio_005()
+        {
+            Console.Write("Informe quantos reais você possui em sua carteira:");
+            string valor = Console.ReadLine();
+            double reais = Convert.ToDouble(valor);
+            double dollar = reais / 5;
+
+            if (dollar < 1)
+            {
+                dollar = dollar * 100;
+                Console.WriteLine("Você pode comprar {0} centavos de dólar.", dollar);
+            }
+                else if (dollar < 2)
+                {
+                    Console.WriteLine("Você pode comprar {0} dólar.", dollar);
+                }
+                    else
+                    {
+                        Console.WriteLine("Você pode comprar {0} dólares.", dollar);
+                    }
+        }
+    }
+}
