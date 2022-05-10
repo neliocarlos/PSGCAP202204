@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Cap202204ConsoleApp
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            //Desafio_008();
+            //Desafio_009();
+            //Desafio_010();
+            Console.ReadLine();
+        }
+       
+	  public static void Desafio_008()
+        {
+            Console.Write("Informe o salário do funcionário:");
+            double salario = Convert.ToDouble(Console.ReadLine());
+            double aumento = salario + (salario * 15 / 100);
+            Console.WriteLine("Novo salário de {0}R$.", aumento);
+        }
+
+        public static void Desafio_009()
+        {
+            Console.Write("Digite a temperatura em Cº.");
+            double C = Convert.ToDouble(Console.ReadLine());
+            double F = (C * 1.8) + 32;
+            Console.WriteLine("Temperatura igual a {0}Fº.", F);
+        }
+
+        public static void Desafio_010()
+        {
+            Console.Write("Informe a quilometragem rodada:");
+            double km = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Informe os dias usados:");
+            double dias = Convert.ToDouble(Console.ReadLine());
+            double custo = (60 * dias) + (km * 0.15);
+            Console.WriteLine("Custo total do aluguel do carro igual a {0}R$.", custo);
+        }
+    }
+}
