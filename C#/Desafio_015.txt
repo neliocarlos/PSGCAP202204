@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Cap202204ConsoleApp
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Desafio_015();
+
+            Console.ReadLine();
+        }
+
+        public static void Desafio_015()
+        {
+            List<string> lista = CriarListaDeNomes();
+            Console.WriteLine("Lista Original:");
+            foreach (string str in lista)
+            {
+                Console.WriteLine(str);
+            }
+
+            Console.WriteLine("-----------------");
+            Random rand = new Random();
+            List<string> listaEmbaralhada = lista.OrderBy(x => rand.Next()).ToList();
+            Console.WriteLine("Lista Embaralhada:");
+            foreach (string str in listaEmbaralhada)
+            {
+                Console.WriteLine(str);
+            }
+
+            int indice = rand.Next(listaEmbaralhada.Count());
+            Console.WriteLine("-----------------");
+            Console.WriteLine("Índice sorteado: {0}.", indice);
+            Console.WriteLine("Nome sorteado: {0}.", listaEmbaralhada[indice]);
+        }
+    }
+}
