@@ -115,19 +115,19 @@ namespace Cap202204ConsoleApp
         public static void Desafio_002()
         {
             Console.Write("Digite a primeira nota:");
-            double nota_1 = Convert.ToDouble(Console.ReadLine());
+            float nota_1 = Convert.ToSingle(Console.ReadLine());
             Console.Write("Digite a segunda nota:");
-            double nota_2 = Convert.ToDouble(Console.ReadLine());
-            double media = (nota_1 + nota_2) / 2;
+            float nota_2 = Convert.ToSingle(Console.ReadLine());
+            float media = (nota_1 + nota_2) / 2;
             Console.WriteLine("A média do aluno foi {0}", media);
         }
 
         public static void Desafio_003()
         {
             Console.Write("Informe um valor em metros:");
-            double metros = Convert.ToDouble(Console.ReadLine());
-            double cent = metros * 100;
-            double mili = cent * 10;
+            float metros = Convert.ToSingle(Console.ReadLine());
+            float cent = metros * 100;
+            float mili = cent * 10;
             Console.WriteLine("O objeto possui {0} centimetros ou {1} milimetros.", cent, mili);
         }
 
@@ -146,53 +146,53 @@ namespace Cap202204ConsoleApp
         {
             Console.Write("Informe quantos reais você possui em sua carteira:");
             string valor = Console.ReadLine();
-            double reais = Convert.ToDouble(valor);
-            double dollar = reais / 5;
+            float reais = Convert.ToSingle(valor);
+            float dollar = reais / 5;
             if (dollar < 1)
             {
                 dollar = dollar * 100;
                 Console.WriteLine("Você pode comprar {0} centavos de dólar.", dollar);
             }
-                else if (dollar < 2)
-                {
-                    Console.WriteLine("Você pode comprar {0} dólar.", dollar);
-                }
-                    else
-                    {
-                        Console.WriteLine("Você pode comprar {0} dólares.", dollar);
-                    }
+            else if (dollar < 2)
+            {
+                Console.WriteLine("Você pode comprar {0} dólar.", dollar);
+            }
+            else
+            {
+                Console.WriteLine("Você pode comprar {0} dólares.", dollar);
+            }
         }
 
         public static void Desafio_006()
         {
             Console.Write("Informe a largura da parede:");
-            double largura = Convert.ToDouble(Console.ReadLine());
+            float largura = Convert.ToSingle(Console.ReadLine());
             Console.Write("Informe a altura da parede:");
-            double altura = Convert.ToDouble(Console.ReadLine());
-            double area = altura * largura;
+            float altura = Convert.ToSingle(Console.ReadLine());
+            float area = altura * largura;
             Console.WriteLine("A parede possui {0}m², e é necessário {1} litros de tinta para pintá-la.", area, area / 2);
         }
 
         public static void Desafio_007()
         {
             Console.Write("Digite o valor do produto:");
-            double valor = Convert.ToDouble(Console.ReadLine());
-            double desc = valor - (valor * 5 / 100);
+            float valor = Convert.ToSingle(Console.ReadLine());
+            float desc = valor - (valor * 5 / 100);
             Console.WriteLine("Valor com desconto igual a {0} reais.", desc);
         }
 
         public static void Desafio_008()
         {
             Console.Write("Informe o salário do funcionário:");
-            double salario = Convert.ToDouble(Console.ReadLine());
-            double aumento = salario + (salario * 15 / 100);
+            float salario = Convert.ToSingle(Console.ReadLine());
+            float aumento = salario + (salario * 15 / 100);
             Console.WriteLine("Novo salário de {0}R$.", aumento);
         }
 
         public static void Desafio_009()
         {
             Console.Write("Digite a temperatura em Cº.");
-            double C = Convert.ToDouble(Console.ReadLine());
+            float C = Convert.ToSingle(Console.ReadLine());
             double F = (C * 1.8) + 32;
             Console.WriteLine("Temperatura igual a {0}Fº.", F);
         }
@@ -200,9 +200,9 @@ namespace Cap202204ConsoleApp
         public static void Desafio_010()
         {
             Console.Write("Informe a quilometragem rodada:");
-            double km = Convert.ToDouble(Console.ReadLine());
+            float km = Convert.ToSingle(Console.ReadLine());
             Console.Write("Informe os dias usados:");
-            double dias = Convert.ToDouble(Console.ReadLine());
+            float dias = Convert.ToSingle(Console.ReadLine());
             double custo = (60 * dias) + (km * 0.15);
             Console.WriteLine("Custo total do aluguel do carro igual a R${0}.", custo);
         }
@@ -214,7 +214,7 @@ namespace Cap202204ConsoleApp
             numeros.Add(8);
             numeros.Add(9);
             numeros.Add(10);
-            
+
             for (int i = 0; i <= numeros.Count(); i++)
             {
                 Console.WriteLine(i);
@@ -314,7 +314,7 @@ namespace Cap202204ConsoleApp
             List<string> lista = CriarListaDeNomes();
             Random random = new Random();
             int indice = random.Next(lista.Count());
-            Console.WriteLine("Índice sorteado: {0}.",indice);
+            Console.WriteLine("Índice sorteado: {0}.", indice);
             Console.WriteLine("Nome sorteado: {0}.", lista[indice]);
         }
 
@@ -363,7 +363,7 @@ namespace Cap202204ConsoleApp
         public static void Desafio_016()
         {
             Console.Write("Digite um número: ");
-            double num = Convert.ToDouble(Console.ReadLine());
+            float num = Convert.ToSingle(Console.ReadLine());
             if (num % 2 == 0)
             {
                 Console.WriteLine("{0} é par.", num);
@@ -392,28 +392,28 @@ namespace Cap202204ConsoleApp
             Console.WriteLine("Informe a operação desejada(A/S/M/D): ");
             String op = Console.ReadLine();
             Console.WriteLine("Informe o primeiro valor: ");
-            double valor1 = Convert.ToDouble(Console.ReadLine());
+            float valor1 = Convert.ToSingle(Console.ReadLine());
             Console.WriteLine("Informe o segundo valor: ");
-            double valor2 = Convert.ToDouble(Console.ReadLine());
+            float valor2 = Convert.ToSingle(Console.ReadLine());
             Console.WriteLine("          ");
             if (op.ToUpper() == "A")
             {
-                double adc = valor1 + valor2;
+                float adc = valor1 + valor2;
                 Console.WriteLine("{0} + {1} = {2}", valor1, valor2, adc);
             }
             else if (op.ToUpper() == "S")
             {
-                double sub = valor1 - valor2;
+                float sub = valor1 - valor2;
                 Console.WriteLine("{0} - {1} = {2}", valor1, valor2, sub);
             }
             else if (op.ToUpper() == "M")
             {
-                double mult = valor1 * valor2;
+                float mult = valor1 * valor2;
                 Console.WriteLine("{0} x {1} = {2}", valor1, valor2, mult);
             }
             else if (op.ToUpper() == "D")
             {
-                double div = valor1 / valor2;
+                float div = valor1 / valor2;
                 Console.WriteLine("{0} / {1} = {2}", valor1, valor2, div);
             }
         }
@@ -446,8 +446,8 @@ namespace Cap202204ConsoleApp
         public static void Desafio_021()
         {
             Console.WriteLine("Informe seu salário: ");
-            double salario = Convert.ToDouble(Console.ReadLine());
-            double corrSal;
+            float salario = Convert.ToSingle(Console.ReadLine());
+            float corrSal;
             if (salario < 1700)
             {
                 corrSal = salario + 300;
@@ -462,30 +462,30 @@ namespace Cap202204ConsoleApp
         public static void Desafio_022()
         {
             Console.Write("Informe seu peso(kg): ");
-            double peso = Convert.ToDouble(Console.ReadLine());
+            float peso = Convert.ToSingle(Console.ReadLine());
             Console.Write("Informe sua altura(m): ");
-            double alt = Convert.ToDouble(Console.ReadLine());
-            double imc = peso/(alt*alt);
+            float alt = Convert.ToSingle(Console.ReadLine());
+            float imc = peso / (alt * alt);
             Console.WriteLine("Seu IMC é de {0} kg/m².", imc);
         }
 
         public static void Desafio_023()
         {
             Console.Write("Informe a altura da caixa d'água(m): ");
-            double alt = Convert.ToDouble(Console.ReadLine());
+            float alt = Convert.ToSingle(Console.ReadLine());
             Console.Write("Informe a área da base da caixa d'água(m²): ");
-            double areaBase = Convert.ToDouble(Console.ReadLine());
-            double volume = alt * areaBase;
-            double qtdeAgua = volume * 1000;
+            float areaBase = Convert.ToSingle(Console.ReadLine());
+            float volume = alt * areaBase;
+            float qtdeAgua = volume * 1000;
             Console.WriteLine("Volume de {0} m³ ou {1} litros de água.", volume, qtdeAgua);
         }
 
         public static void Desafio_024()
         {
             Console.Write("Informe a altura do cilindro(m): ");
-            double alt = Convert.ToDouble(Console.ReadLine());
+            float alt = Convert.ToSingle(Console.ReadLine());
             Console.Write("Informe o raio da base do cilindro(m): ");
-            double raio = Convert.ToDouble(Console.ReadLine());
+            float raio = Convert.ToSingle(Console.ReadLine());
             double volume = Math.PI * (raio * raio) * alt;
             Console.WriteLine("Volume do cilindro igual a {0} m³", volume);
         }
@@ -493,17 +493,17 @@ namespace Cap202204ConsoleApp
         public static void Desafio_025()
         {
             Console.Write("Informe um número qualquer: ");
-            double num1 = Convert.ToDouble(Console.ReadLine());
+            float num1 = Convert.ToSingle(Console.ReadLine());
             Console.Write("Informe outro número qualquer: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-            double num3 = (num2 > num1) ? num2 - num1 : num1 - num2;
+            float num2 = Convert.ToSingle(Console.ReadLine());
+            float num3 = (num2 > num1) ? num2 - num1 : num1 - num2;
             Console.WriteLine(Math.Pow(num3, 2));
         }
 
         public static void Desafio_026()
         {
             Console.Write("Informe o raio da esfera(cm): ");
-            double raio = Convert.ToDouble(Console.ReadLine());
+            float raio = Convert.ToSingle(Console.ReadLine());
             double volume = (4 / 3) * Math.PI * Math.Pow(raio, 3);
             Console.WriteLine("Volume igual a {0} cm³.", volume);
         }
@@ -511,13 +511,13 @@ namespace Cap202204ConsoleApp
         public static void Desafio_027()
         {
             Console.Write("Digite um número real: ");
-            double num1 = Convert.ToDouble(Console.ReadLine());
+            float num1 = Convert.ToSingle(Console.ReadLine());
             Console.Write("Digite outro número real: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-            double adc = num1 + num2;
-            double sub = num1 - num2;
-            double mult = num1 * num2;
-            double div = num1 / num2;
+            float num2 = Convert.ToSingle(Console.ReadLine());
+            float adc = num1 + num2;
+            float sub = num1 - num2;
+            float mult = num1 * num2;
+            float div = num1 / num2;
             Console.WriteLine("{0} + {1} = {2}", num1, num2, adc);
             Console.WriteLine("{0} - {1} = {2}", num1, num2, sub);
             Console.WriteLine("{0} x {1} = {2}", num1, num2, mult);
@@ -527,21 +527,21 @@ namespace Cap202204ConsoleApp
         public static void Desafio_028()
         {
             Console.Write("Informe a quilometragem rodada na viagem: ");
-            double km = Convert.ToDouble(Console.ReadLine());
+            float km = Convert.ToSingle(Console.ReadLine());
             Console.Write("Informe quantos km/L seu carro faz em média: ");
-            double kmLitro = Convert.ToDouble(Console.ReadLine());
-            double consumo = km / kmLitro;
+            float kmLitro = Convert.ToSingle(Console.ReadLine());
+            float consumo = km / kmLitro;
             Console.WriteLine("Seu carro consumiu aproximadamente {0} litros de combustível.", consumo);
         }
 
         public static void Desafio_029()
         {
             Console.Write("Informe o valor original da prestação: ");
-            double prest = Convert.ToDouble(Console.ReadLine());
+            float prest = Convert.ToSingle(Console.ReadLine());
             Console.Write("Informe a quantidade de dias que o pagamento está atrasado: ");
-            double diasAtrs = Convert.ToDouble(Console.ReadLine());
+            float diasAtrs = Convert.ToSingle(Console.ReadLine());
             Console.Write("Informe a % de juros: ");
-            double juros = Convert.ToDouble(Console.ReadLine());
+            float juros = Convert.ToSingle(Console.ReadLine());
             for (int i = 1; i <= diasAtrs; i++)
             {
                 prest = prest + (prest * (juros / 100));
@@ -551,19 +551,19 @@ namespace Cap202204ConsoleApp
 
         public static void Desafio_030()
         {
-            double numMaior = 0;
-            double numMenor = 0;
+            float numMaior = 0;
+            float numMenor = 0;
             for (int i = 0; i < 5; i++)
             {
                 Console.Clear();
                 Console.Write("Informe um número qualquer: ");
-                double num = Convert.ToDouble(Console.ReadLine());
+                float num = Convert.ToSingle(Console.ReadLine());
                 if (i == 0)
                 {
                     numMaior = num;
                     numMenor = num;
                 }
-                else if (num > numMaior) 
+                else if (num > numMaior)
                 {
                     numMaior = num;
                 }
