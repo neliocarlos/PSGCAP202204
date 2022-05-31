@@ -60,7 +60,7 @@ namespace DesafiosDaGripe01
                 status = true;
                 Console.WriteLine("Pode se aposentar? {0}.", status);
             }
-            else if (empregado.Sexo == "F" && idade < 60)
+            else if (empregado.Sexo == "F" && idade > 60)
             {
                 status = true;
                 Console.WriteLine("Pode se aposentar? {0}.", status);
