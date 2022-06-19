@@ -1,0 +1,29 @@
+{
+	"profissao": [
+	{
+		"codigo": 1,
+		"descricao": "ADMINISTRADOR ",
+		"situacao": 1
+	},
+	{
+		"codigo": 2,
+		"descricao": "ADMINISTRADOR DE EDIFICIO ",
+		"situacao": 1
+	},
+	{
+		"codigo": 3,
+		"descricao": "ADMINISTRADOR DE EXPLORACAO AGRICOLA ",
+		"situacao": 1
+	},
+	{
+		"codigo": 4,
+		"descricao": "ADMINISTRADORES ",
+		"situacao": 1
+	},
+	{
+		"codigo": 5,
+		"descricao": "ADVOGADO ",
+		"situacao": 1
+	}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"idioma": [
+	{
+		"codigo": 1,
+		"abreviacao_idioma": "AA",
+		"descricao": "Afar",
+		"situacao": "true"
+	},
+	{
+		"codigo": 2,
+		"abreviacao_idioma": "AB",
+		"descricao": "Abhkazian",
+		"situacao": "true"
+	},
+	{
+		"codigo": 3,
+		"abreviacao_idioma": "AF",
+		"descricao": "Afrikaans",
+		"situacao": "true"
+	},
+	{
+		"codigo": 4,
+		"abreviacao_idioma": "AM",
+		"descricao": "Amarico",
+		"situacao": "true"
+	},
+	{
+		"codigo": 5,
+		"abreviacao_idioma": "AR",
+		"descricao": "Arabe",
+		"situacao": "true"
+	}
+	]
+}

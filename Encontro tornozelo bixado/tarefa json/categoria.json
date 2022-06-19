@@ -1,0 +1,29 @@
+{
+	"categoria": [
+	{
+		"codigo": 1,
+		"descricao": "Alimento Infantil",
+		"situacao": 1
+	},
+	{
+		"codigo": 2,
+		"descricao": "Suplementos",
+		"situacao": 1
+	},
+	{
+		"codigo": 3,
+		"descricao": "Bebidas",
+		"situacao": 1
+	},
+	{
+		"codigo": 4,
+		"descricao": "Biscoitos, Bolos e Bolachas",
+		"situacao": 1
+	},
+	{
+		"codigo": 5,
+		"descricao": "Carnes",
+		"situacao": 1
+	}
+	]
+}

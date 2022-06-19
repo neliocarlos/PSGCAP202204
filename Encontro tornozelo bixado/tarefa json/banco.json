@@ -1,0 +1,38 @@
+{
+	"banco": [
+	{
+		"codigo": 1,
+		"codigo_banco": 246,
+		"descricao": "Banco ABC Brasil S.A.",
+		"site": "http://www.abcbrasil.com.br/",
+		"situacao": 1
+	},
+	{
+		"codigo": 2,
+		"codigo_banco": 356,
+		"descricao": "Banco ABN AMRO Real S.A.",
+		"site": "http://www.abnamro.com.br/",
+		"situacao": 1
+	},
+	{
+		"codigo": 3,
+		"codigo_banco": 25,
+		"descricao": "Banco Alfa S.A.",
+		"site": "http://www.bancoalfa.com.br/",
+		"situacao": 1
+	},
+	{
+		"codigo": 4,
+		"codigo_banco": 641,
+		"descricao": "Banco Alvorada S.A.",
+		"site": "Não possio site.",
+		"situacao": 1
+	},
+	{
+		"codigo": 6,
+		"codigo_banco": 29,
+		"descricao": "Banco Banerj S.A.",
+		"site": "http://www.banerj.com.br/",
+		"situacao": 1
+	},
+}

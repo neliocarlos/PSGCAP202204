@@ -1,0 +1,38 @@
+{
+	"produto": [
+	{
+		"codigo": 1,
+		"codigo_subcategoria": 1,
+		"codigo_categoria": 1,
+		"descricao": "Papinha Infantil de Ameixa NESTLÉ",
+		"situacao": 1
+	},
+	{
+		"codigo": 2,
+		"codigo_subcategoria": 1,
+		"codigo_categoria": 1,
+		"descricao": "Papinha Infantil de Banana NESTLÉ",
+		"situacao": 1
+	},
+	{
+		"codigo": 3,
+		"codigo_subcategoria": 1,
+		"codigo_categoria": 1,
+		"descricao": "Papinha Infantil de Goiaba NESTLÉ",
+		"situacao": 1
+	},
+	{
+		"codigo": 4,
+		"codigo_subcategoria": 1,
+		"codigo_categoria": 1,
+		"descricao": "Papinha Infantil de Frutas Sortidas NESTLÉ",
+		"situacao": 1
+	},
+	{
+		"codigo": 5,
+		"codigo_subcategoria": 1,
+		"codigo_categoria": 1,
+		"descricao": "Papinha Infantil de Maçã e Ameixa NESTLÉ",
+		"situacao": 1
+	},
+}
