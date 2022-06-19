@@ -1,0 +1,9 @@
+{
+	"produto":{
+		"codigo": ,
+		"codigo_subcategoria": ,
+		"codigo_categoria": ,
+		"descricao": "",
+		"situacao": "true"
+	},
+}
