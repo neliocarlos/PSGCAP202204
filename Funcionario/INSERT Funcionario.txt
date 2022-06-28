@@ -1,0 +1,28 @@
+SET IDENTITY_INSERT Funcionario ON
+
+
+INSERT INTO Funcionario(Matricula_Funcionario, Nome_Funcionario, Sobrenome_Funcionario, Situacao, ID_FuncDadosEmpresa, Data_Admissao_Funcionario,
+Ctps_Funcionario, Ctps_Num_Funcionario, Ctps_Serie_Funcionario, ID_Funcionario, Sexo_Funcionario, Email_Funcionario, Datanasc_Funcionario, ID_Pais)
+
+SELECT FDE.Matricula_Funcionario,
+		FDE.Nome_Funcionario,
+		FDE.Sobrenome_Funcionario,
+		FDE.Situacao,
+		FDE.ID_FuncDadosEmpresa,
+		FDE.Data_Admissao_Funcionario,
+		FDE.Ctps_Funcionario,
+		FDE.Ctps_Num_Funcionario, 
+		FDE.Ctps_Serie_Funcionario, 
+		FDP.ID_Funcionario, 
+		FDP.Sexo_Funcionario,
+		FDP.Email_Funcionario,
+		FDP.Datanasc_Funcionario,
+		FDP.ID_Pais
+FROM Funcionario_Dados_Empresa AS FDE INNER JOIN
+     Funcionario_Dados_Pessoais AS FDP ON FDE.Matricula_Funcionario = FDP.Matricula_Funcionario 
+	 AND FDE.Nome_Funcionario = FDP.Nome_Funcionario 
+	 AND FDE.Sobrenome_Funcionario = FDP.Sobrenome_Funcionario 
+	 AND FDE.Situacao = FDP.Situacao
+
+SET IDENTITY_INSERT Funcionario OFF
+GO

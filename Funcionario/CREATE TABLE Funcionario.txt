@@ -1,0 +1,21 @@
+CREATE TABLE Funcionario(
+	ID_Funcionario BIGINT IDENTITY (1,1) NOT NULL,
+	ID_FuncDadosEmpresa BIGINT NOT NULL,
+	Matricula_Funcionario BIGINT NOT NULL,
+	Nome_Funcionario VARCHAR(50) NOT NULL,
+	Sobrenome_Funcionario VARCHAR(50) NOT NULL,
+	Data_Adimissao_Funcionario DATETIME NOT NULL,
+	Sexo_Funcionario CHAR(1) NOT NULL,
+	Datanasc_Funcionario DATETIME NOT NULL,
+	Email_Funcioario VARCHAR(75) NOT NULL,
+	ID_Pais INT NOT NULL,
+	Ctps_Funcionario VARCHAR(50) NOT NULL,
+	Ctps_Num_Funcionario BIGINT NOT NULL,
+	Ctps_Serie_Funcionario INT NOT NULL,
+	Situacao BIT NULL DEFAULT 1,
+	DataInclusao DATETIME NULL DEFAULT GETDATE(),
+	DataAlteracao DATETIME NULL,
+	DataExclusao DATETIME NULL
+CONSTRAINT PK_Funcionario PRIMARY KEY (ID_Funcionario)
+)
+GO
